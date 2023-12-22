@@ -104,20 +104,20 @@ const checkWinner=()=>{
     }
 
 };
-// const checkDraw = () => {
-//     let isDraw = true;
-//     for (let box of boxes) {
-//       if (box.innerText === "") {
-//         isDraw = false;
-//         break;
-//       }
-//     }
-//     if (isDraw) {
-//       msg.innerText = "It's a draw!";
-//       msgContainer.classList.remove("hide");
-//       disableBoxes();
-//     }
-//   };
+const checkDraw = () => {
+    let isDraw = true;
+    for (let box of boxes) {
+      if (box.innerText === "") {
+        isDraw = false;
+        break;
+      }
+    }
+    if (isDraw) {
+      msg.innerText = "It's a draw!";
+      msgContainer.classList.remove("hide");
+      disableBoxes();
+    }
+  };
 
 
 
